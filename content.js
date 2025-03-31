@@ -7,7 +7,7 @@ function blurImage(image) {
 //function to check whether image is ghibli or not
 function isGhibliAiImage(image) {
     const keywords = ["ghibli", "anime-style", "studio ghibli", "ai art", "midjourney", "stable diffusion"];
-    const altText = image.alt.toLowercase();
+    const altText = image.alt.toLowerCase();
     const src = image.src.toLowercase();
 
     return keywords.some(keyword => altText.includes(keyword) || src.includes(keyword));
