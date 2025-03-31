@@ -18,7 +18,7 @@ function scanImages() {
     const images = document.querySelectorAll("img");
 
     images.forEach(img => {
-        if (isGhibliAIImage(img)) {
+        if (isGhibliAiImage(img)) {
             blurImage(img);
         }
     });
